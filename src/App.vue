@@ -4,18 +4,22 @@
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <router-link to="./Home">首页</router-link>
     <router-view></router-view>
+
+    <Footer />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Header
+    Header,
+    Footer,
   }
 }
 </script>
