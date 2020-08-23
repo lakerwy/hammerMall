@@ -52,7 +52,7 @@ export default {
                 {id: 1, bgUrl: [4,5],title: '坚果砖式蓝牙小音箱',price: '￥ 99.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
                 {id: 2, bgUrl: [6],title: '坚果三脚架自拍杆',price: '￥ 89.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
                 {id: 3, bgUrl: [7],title: '各色DNA检测套装',price: '￥ 169.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
-                {id: 4, bgUrl: [8],title: '畅呼吸除甲醛超级活性炭滤芯',price: '￥ 499.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
+                {id: 4, bgUrl: [100],title: '畅呼吸除甲醛超级活性炭滤芯',price: '￥ 499.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
                 {id: 5, bgUrl: [8],title: '畅呼吸除甲醛超级活性炭滤芯',price: '￥ 169.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
                 {id: 6, bgUrl: [9,10,11],title: '地平线 8 号旅行箱',price: '￥ 169.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
                 {id: 7, bgUrl: [12],title: '坚果 QuickCharge 4+ 快速充电器',price: '￥ 169.00',btn1: '查看详情',btn2: '加入购物车',btnSeen: false,nowNav: 0,},
