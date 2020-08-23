@@ -11,6 +11,10 @@ Vue.use(VueRouter);
 let router=new VueRouter({
   routes: [
     {
+      path: '/',
+      redirect: '/Home'
+    },
+    {
       path: '/Home',
       name: 'Home',
       component: Home
