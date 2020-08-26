@@ -7,7 +7,7 @@
             <span class="ban_btn_act" v-for="(item,index) in bannerUrl" :key="item" :style="{backgroundColor: nowIndex==index?'white':'gray'}" @click="btnClick(index)"></span>
         </div>
     </div>
-    <!-- 热门商品  href="detail.html"-->
+    <!-- 热门商品  href="#/"-->
     <div id="hotGoogs_top">
         <h3>热门商品</h3>
         <div id="hg-btn">
@@ -18,7 +18,7 @@
     </div>
     <div id="hotGoogs_main">
         <div v-for="item in hotGood" :key="item.id" v-show="item.id>=hotIndex">
-        <a href="detail.html">
+        <a href="#/">
             <div class="hotGoogs" :style="{backgroundImage: 'url('+bgImgs(item.bgUrl[item.nowNav])+')'}" @mouseover="item.btnSeen=true" @mouseout="item.btnSeen=false">
                 <h4 class="hg_titlt">{{item.title}}</h4>
                 <div class="hotGoods-cycle">
@@ -32,6 +32,96 @@
             </div>
         </a>
         </div>
+    </div>
+
+    <!-- 服饰专场  加detial.html-->
+    <div id="cloth_top">
+        <h3>服饰专场</h3>
+    </div>
+    <div id="cloth_main">
+        <a href="#/">
+        </a>
+        <a href="#/">
+            <h4 class="hg_titlt">Smartisan T恤 丑小鸭</h4>
+            <div class="hotGoods-cycle">
+                <span class="hotGoods-cycle-span" id="13"></span>
+                <span class="hotGoods-cycle-span" id="14"></span>
+                <span class="hotGoods-cycle-span" id="15"></span>
+                <span class="hotGoods-cycle-span" id="16"></span>
+                <span class="hotGoods-cycle-span" id="17"></span>
+                <span class="hotGoods-cycle-span" id="18"></span>
+            </div>
+            <p class="hotGoods-price">￥&nbsp;149.00<span></span></p>
+            <p class="hotGoods-pay">
+                <button>查看详情</button>
+            </p>
+        </a>
+        <a href="#/">
+            <h4 class="hg_titlt">Smartisan T恤 红白机</h4>
+            <div class="hotGoods-cycle">
+                <span class="hotGoods-cycle-span" id="19"></span>
+                <span class="hotGoods-cycle-span" id="20"></span>
+            </div>
+            <p class="hotGoods-price">￥&nbsp;99.00<span></span></p>
+            <p class="hotGoods-pay">
+                <button>查看详情</button>
+            </p>
+        </a>
+        <a href="#/">
+            <h4 class="hg_titlt">Smartisan T恤 迪特拉姆斯</h4>
+            <div class="hotGoods-cycle">
+                <span class="hotGoods-cycle-span" id="21"></span>
+                <span class="hotGoods-cycle-span" id="22"></span>
+                <span class="hotGoods-cycle-span" id="23"></span>
+
+            </div>
+            <p class="hotGoods-price">￥&nbsp;99.00<span></span></p>
+            <p class="hotGoods-pay">
+                <button>查看详情</button>
+            </p>
+        </a>
+        <a href="#/">
+            <h4 class="hg_titlt">Smartisan T恤 经典款</h4>
+            <div class="hotGoods-cycle">
+                <span class="hotGoods-cycle-span" id="24"></span>
+                <span class="hotGoods-cycle-span" id="25"></span>
+                <span class="hotGoods-cycle-span" id="26"></span>
+                <span class="hotGoods-cycle-span" id="27"></span>
+                <span class="hotGoods-cycle-span" id="28"></span>
+                <span class="hotGoods-cycle-span" id="29"></span>
+                <span class="hotGoods-cycle-span" id="30"></span>
+            </div>
+            <p class="hotGoods-price">￥&nbsp;149.00<span></span></p>
+            <p class="hotGoods-pay">
+                <button>查看详情</button>
+            </p>
+        </a>
+        <a href="#/">
+            <h4 class="hg_titlt">Smartisan Polo衫 经典款</h4>
+            <div class="hotGoods-cycle">
+                <span class="hotGoods-cycle-span" id="31"></span>
+                <span class="hotGoods-cycle-span" id="32"></span>
+
+            </div>
+            <p class="hotGoods-price">￥&nbsp;149.00<span></span></p>
+            <p class="hotGoods-pay">
+                <button>查看详情</button>
+            </p>
+        </a>
+        <a href="#/">
+            <h4 class="hg_titlt">Smartisan 帆布鞋</h4>
+            <div class="hotGoods-cycle">
+                <span class="hotGoods-cycle-span" id="33"></span>
+                <span class="hotGoods-cycle-span" id="34"></span>
+                <span class="hotGoods-cycle-span" id="35"></span>
+                <span class="hotGoods-cycle-span" id="36"></span>
+            </div>
+            <p class="hotGoods-price">￥&nbsp;149.00<span></span></p>
+            <p class="hotGoods-pay">
+                <button>查看详情</button>
+            </p>
+        </a>
+        <div class="clear"></div>
     </div>
 </div>
 </template>
@@ -263,5 +353,122 @@ a {text-decoration: none;}
     border: 1px solid rgba(185,185,185,0.8);
     background-color: rgb(90,133,221);
     color: white;
+}
+
+/* 服饰专场 */
+#cloth_top,#bags_top,#phone_top,#BBS_top{
+    height: 70px;
+    width: 1220px;
+    margin: 30px auto 0 auto;
+    line-height: 70px;
+    border: 1px solid rgba(210,210,210,1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(250,250,250);
+}
+#hotGoogs_top>h3,#cloth_top>h3,#bags_top>h3,#breath_top>h3,#phone_top>h3,#BBS_top>h3{
+    padding-left: 30px;
+    color: rgb(102,102,102);
+}
+#cloth_main,#bags_main,#access_main,#phone_main{
+    width: 1220px;
+    height: 880px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#breath_main{
+    width: 1220px;
+    height: 440px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#cloth_main>a,#bags_main>a,#access_main>a,#breath_main>a,#phone_main>a{
+    /* display: inline-block; */
+    margin: 0;
+    width: 305px;
+    height: 440px;
+    box-sizing: border-box;
+    border: 1px solid rgba(210,210,210,0.7);
+    border-top: none;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    float: left; 
+    /* 设置flot：left后元素的display都会变成block */
+}
+#cloth_main>a:hover,#bags_main>a:hover,#access_main>a:hover,#breath_main>a:hover,#phone_main>a:hover{
+    box-shadow:0 0 30px 5px #EDEDED inset;
+}
+#cloth_main>a:nth-child(1),#access_main>a:nth-child(1),#breath_main>a:nth-child(1),#phone_main>a:nth-child(1){
+    background-size: 610px 440px;
+    width: 610px;
+}
+#bags_main>a:nth-child(1){
+    background-size: 610px 440px;
+    width: 610px;
+}
+#breath_main>a:nth-child(1){
+    background-size: 610px 440px;
+    width: 610px;
+}
+#cloth_main>a:nth-child(1),#cloth_main>a:nth-child(2),#cloth_main>a:nth-child(4),#cloth_main>a:nth-child(5),#cloth_main>a:nth-child(6){
+    border-right: none;
+}
+#phone_main>a:nth-child(1),#phone_main>a:nth-child(2),#phone_main>a:nth-child(4),#phone_main>a:nth-child(5),#phone_main>a:nth-child(6){
+    border-right: none;
+}
+#bags_main>a:nth-child(1),#bags_main>a:nth-child(2),#bags_main>a:nth-child(4),#bags_main>a:nth-child(5),#bags_main>a:nth-child(6){
+    border-right: none;
+}
+#cloth_main .hg_titlt,#phone_main .hg_titlt{
+    text-align: center;
+    margin-top: 305px;
+    font-size: 14px;
+    font-weight: 600;
+}
+#bags_main .hg_titlt,#access_main .hg_titlt,#breath_main .hg_titlt{
+    text-align: center;
+    margin-top: 305px;
+    font-size: 14px;
+    font-weight: 600;
+}
+#cloth_main .hg_titlt+p,#access_main .hg_titlt+p,#phone_main .hg_titlt+p{
+    overflow: hidden;
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+    text-align: center;
+}
+#bags_main .hg_titlt+p,#breath_main .hg_titlt+p{
+    overflow: hidden;
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+    text-align: center;
+}
+#access_top,#breath_top{
+    height: 70px;
+    width: 1220px;
+    margin: 30px auto 0 auto;
+    line-height: 70px;
+    border: 1px solid rgba(210,210,210,1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(250,250,250);
+    position: relative;
+}
+#access_main>a:nth-child(1),#access_main>a:nth-child(2),#access_main>a:nth-child(4),#access_main>a:nth-child(5),#access_main>a:nth-child(6){
+    border-right: none;
 }
 </style>
